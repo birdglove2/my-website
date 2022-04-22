@@ -9,7 +9,7 @@ title: phoenix bird
 import React, { useRef, useEffect } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 
-export default function Model({ ...props }) {
+export default function PhoenixModel({ ...props }) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF('/phoenix/scene.gltf');
   const { actions } = useAnimations(animations, group);

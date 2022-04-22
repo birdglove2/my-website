@@ -1,7 +1,7 @@
 import { PerspectiveCamera, Environment, OrbitControls, Html } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useEffect, useRef } from 'react';
-import Model from './PhoenixModel';
+import PhoenixModel from './PhoenixModel';
 import gsap from 'gsap';
 import * as THREE from 'three';
 import { angleToRadians } from 'utils';
@@ -25,7 +25,7 @@ export const PhoenixCanvas = () => {
           position={[-6, 6, -1]}
           castShadow
         />
-        <Model scale={0.01} />
+        <PhoenixModel scale={0.01} />
         <Html position={[12, 3, -2]}>
           <h1
             style={{
